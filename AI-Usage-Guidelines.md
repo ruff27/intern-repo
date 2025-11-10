@@ -26,8 +26,10 @@ Do not upload sensitive information to AI including passwords, passkeys, APIs, a
 🛠️ Task
 
 Identify one task you can improve using an AI tool, and try it out.
-
+I asked AI to summarise a text.
 
 Review the AI-generated output critically—did it require editing or fact-checking?
+No.
 
 Document one best practice you will follow when using AI tools at Focus Bear.
+Understand what AI is writing before implementing intot he codebase.
