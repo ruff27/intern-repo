@@ -35,9 +35,13 @@ Lock the account and seek support.
 🛠️ Task
 
 Ensure your work accounts have strong passwords and enable 2FA where possible.
+Completed.
 
 Review your password storage method—if you’re not using a password manager, consider setting one up.
+Completed.
 
-Set up your computer and phone to automatically lock (require a password or biometric login) if you are away for more than a few minutes
+Set up your computer and phone to automatically lock (require a password or biometric login) if you are away for more than a few minutes.
+Completed.
 
 Document one new cyber security habit you will follow at Focus Bear.
+Do not share user data elsewhere.
