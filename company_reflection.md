@@ -13,4 +13,3 @@ How does Focus Bear’s work align with your personal values or interests?
 Do you personally relate to any of the challenges that Focus Bear aims to solve?
 >> Yes. As I mentioned, I want to be more productive in terms of managing my time (for example - gym, practicing music, and upskilling my coding skills).
 
-<img width="837" height="247" alt="image" src="https://github.com/user-attachments/assets/86ecc014-4f79-4be4-b8c2-9b31e020bc12" />
