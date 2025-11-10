@@ -8,7 +8,7 @@ Why do you think this mission is important?
 >> According to research, almost 25% university students who are struggling with ADHD tend to dropout. Further studies have also shown that they find it harder to land in a full-time role.
  
 How does Focus Bear’s work align with your personal values or interests?
->> I personally have a hard time negotiating with my time management and find it difficult to focus on multiple things. Focus Bear's mission closely aligns with my views and struggles.
+>> I personally have a hard time negotiating with my time management and find it difficult to focus on multiple things. Focus Bear's mission closely aligns with my views and struggles. For example, I struggle to get myself out of the bed to go out and workout but not having a todo-list/habit tracker app makes it harder. I feel Focus Bear will help me into achieving the goals.
  
 Do you personally relate to any of the challenges that Focus Bear aims to solve?
 >> Yes. As I mentioned, I want to be more productive in terms of managing my time (for example - gym, practicing music, and upskilling my coding skills).
