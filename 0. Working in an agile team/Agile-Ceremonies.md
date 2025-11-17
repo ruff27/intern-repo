@@ -2,9 +2,9 @@ Agile Ceremonies & Team Collaboration
 
 #### 🔍 Research & Learn  
 - [x] What are the main **Agile ceremonies**, and what is their purpose?  
-  - **Daily Stand-ups**  
-  - **Sprint Planning (Scrum) vs. Continuous Prioritization (Kanban)**  
-  - **Retrospectives**  
+  - **Daily Stand-ups**  : A brief daily meeting attended by developers and product managers to identify roadblocks, keep track of progress, and plan for the next day.
+  - **Sprint Planning (Scrum) vs. Continuous Prioritization (Kanban)**  : Sprint Planning is done at the start of a project to clarify team about shared goals, potential timelines, and track progress. Meanwhile, prioritization is an ongoing activity often facilitated by the product owner or manager.
+  - **Retrospectives**  : 
   - **Backlog Refinement**  
 - [x] How do Agile teams collaborate asynchronously and across time zones?  
 
