@@ -26,5 +26,6 @@ jobs:
       - name: Run Markdown linting
         run: markdownlint "**/*.md"
 
+
       - name: Run spell checking
         run: cspell "**"
