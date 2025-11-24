@@ -21,6 +21,7 @@
   "devDependencies": {
     "cspell": "^9.3.2",
     "husky": "^9.1.7",
+    "jest": "^30.2.0",
     "markdownlint-cli": "^0.46.0"
   }
 }
