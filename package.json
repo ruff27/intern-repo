@@ -1,0 +1,26 @@
+{
+  "name": "intern-repo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruff27/intern-repo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ruff27/intern-repo/issues"
+  },
+  "homepage": "https://github.com/ruff27/intern-repo#readme",
+  "devDependencies": {
+    "cspell": "^9.3.2",
+    "husky": "^9.1.7",
+    "markdownlint-cli": "^0.46.0"
+  }
+}
