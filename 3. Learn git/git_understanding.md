@@ -105,6 +105,29 @@ cherry-pick surprised me as I was amazed to see git allows you to merge a specif
 
 Commit and push your changes to GitHub.
 
+#75
+
+
+Create a new branch in your Git desktop client (e.g., GitHub Desktop, VS Code, SourceTree).
+Make a small change in your repo and commit it to the new branch.
+Switch back to main and check that your changes are not there.
+
+<img width="1287" height="936" alt="image" src="https://github.com/user-attachments/assets/e1507b98-c15b-4414-bc57-fb5b09e0f0f2" />
+<img width="857" height="743" alt="image" src="https://github.com/user-attachments/assets/1fef1c24-b954-47e7-bc49-39f1bbf515f3" />
+
+
+
+Reflect on why teams use branches instead of pushing directly to main in git_understanding.md:
+Why is pushing directly to main problematic?
+Pushing directly to main is problematic as it may break the entire project for everyone. It could be either by bugs, missing dependencies. This happens when no code review takes place before implementing it on main.
+
+How do branches help with reviewing code?
+Branches allow developers to work separately on specific tasks. This prevents the clash between files. By raising pull-requests, teammates can review the code and verify the features work properly before integrating into main.
+
+What happens if two people edit the same file on different branches?
+If two people work on different parts of the same file git can merge them automatically. However, if both work on the same line it creates a merge conflict. The two developers then have to decide which version to keep.
+
+Commit and push your changes to GitHub.
 
 
 
