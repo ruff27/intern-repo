@@ -129,5 +129,38 @@ If two people work on different parts of the same file git can merge them automa
 
 Commit and push your changes to GitHub.
 
+#43
+
+
+
+Research the difference between staging and committing.
+
+Experiment with adding and committing files in your repo using either:
+The terminal (git add / git commit)
+A Git desktop client (e.g., GitHub Desktop, VS Code Git integration).
+
+Modify a file and try the following:
+Stage it but don’t commit (git add <file> or equivalent in your client).
+Check the status (git status).
+Unstage the file (git reset HEAD <file> or equivalent).
+Commit the file and observe the difference.
+
+<img width="940" height="400" alt="image" src="https://github.com/user-attachments/assets/9a04296c-68f5-4901-9ada-3a9c54587014" />
+<img width="940" height="437" alt="image" src="https://github.com/user-attachments/assets/330d814f-9dcb-4599-ad94-f5f9839cdc7e" />
+
+
+Write a summary in git_understanding.md:
+What is the difference between staging and committing?
+Staging is preparing the snapshot for the changes a developer wants to make for the next commit.
+Commiting is saving the snapshot to permanently save the changes in the repository history.
+
+Why does Git separate these two steps?
+To allow for reviewing before saving them permanently to avoid accidentally committing bugs. It also builds a clear commit history which makes it easy to understand for the developers.
+
+When would you want to stage changes without committing?
+When I am preparing the changes but still want to review the files or when I am making multiple changes but want to commit the one that I am ready to publish.
+
+Commit and push your changes to GitHub.
+
 
 
