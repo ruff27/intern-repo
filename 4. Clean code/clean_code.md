@@ -1,4 +1,4 @@
-
+#74
 Research the importance of unit testing in software development.
 
 Choose a testing framework (e.g., Jest for JavaScript, PyTest for Python).
@@ -25,3 +25,55 @@ While testing, I discovered a data type issue.
 The test: "expect(sum("a", 3)).toBeNaN();" initially failed because JavaScript attempted to perform a string + number operation, resulting in unexpected behaviour.
 
 This highlighted why writing tests is useful as it exposes hidden issues early.
+
+
+#72
+
+
+Research strategies for handling errors and edge cases in code (include Guard Clauses).
+
+Find an existing function that doesn’t properly handle errors or invalid inputs.
+The original function in sum.js:
+
+"function sum(a, b) {
+  return a + b;
+}
+
+module.exports = sum;"
+
+It doesn’t check if the inputs are numbers
+"a" + 3 results in "a3" — not an error, just wrong behaviour
+undefined + 5 results in NaN
+Negative or missing values are not handled
+The function silently accepts invalid input
+
+Refactor the function to improve error handling.
+function sum(a, b) {
+  // Guard clauses for invalid inputs
+  if (typeof a !== "number" || typeof b !== "number") {
+    throw new Error("Both inputs must be valid numbers.");
+  }
+
+  return a + b;
+}
+
+module.exports = sum;
+
+Write reflections in clean_code.md:
+What was the issue with the original code?
+
+The original sum() function did not validate input types.
+
+"a" + 3 → "a3"
+undefined + 5 → NaN
+true + 1 → 2 (unexpected)
+
+Because no guard clauses existed, any invalid input produced silent failures, which can lead to debugging issues later.
+
+How does handling errors improve reliability?
+Ensures the function behaves consistently
+Prevents silent failures such as "a3" or NaN
+Makes debugging easier thanks to clear error messages
+Protects other parts of the system from unexpected results
+Encourages writing safe, predictable, and clean code
+
