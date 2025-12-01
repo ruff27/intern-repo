@@ -251,6 +251,75 @@ Commit and push your changes to GitHub.
 🚀 Next Steps
 Move on to Refactoring Code for Simplicity.
 
+#66
+
+📌 Writing Small, Focused Functions
+🎯 Goal
+Learn how to break down large functions into smaller, more maintainable units.
+
+✅ Tasks
+
+Research best practices for writing small, single-purpose functions.
+
+Find an example of a long, complex function in an existing codebase (or write your own).
+Check "4. Clean code/processUser.js" file or click the commit made using the issue number
+
+Refactor it into multiple smaller functions with clear responsibilities.
+function validateName(name) {
+  if (!name || typeof name !== "string") {
+    throw new Error("Invalid name");
+  }
+}
+
+function validateAge(age) {
+  if (typeof age !== "number" || age < 0) {
+    throw new Error("Invalid age");
+  }
+}
+
+function formatName(name) {
+  return name.trim().toUpperCase();
+}
+
+function getBirthYear(age) {
+  return new Date().getFullYear() - age;
+}
+
+function createMessage(name, birthYear) {
+  return "User ${name} was born in ${birthYear}.";
+}
+
+function processUser(name, age) {
+  validateName(name);
+  validateAge(age);
+
+  const formattedName = formatName(name);
+  const birthYear = getBirthYear(age);
+
+  return createMessage(formattedName, birthYear);
+}
+
+module.exports = processUser;
+
+
+Write reflections in clean_code.md:
+Why is breaking down functions beneficial?
+Each function becomes easier to understand
+Bugs are easier to isolate
+Code can be reused elsewhere
+Functions become easier to test individually
+The intention of each piece becomes clearer
+Makes future updates safer and less risky
+
+How did refactoring improve the structure of the code?
+Separating validation, formatting, calculations, and output into their own functions
+Making the main logic (processUser) shorter and cleaner
+Making the code more modular and organised
+Reducing complexity and noise
+Allowing each function to be tested individually
+Making the code easier for another developer to understand
+
+
 
 
 
