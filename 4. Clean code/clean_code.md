@@ -192,5 +192,65 @@ Making the code shorter and easier to understand
 Removing unnecessary branching
 Clarifying intention with a simple one-line return
 
+#64
+
+📌 Avoiding Code Duplication
+🎯 Goal
+Understand how to identify and eliminate unnecessary duplication in code.
+
+✅ Tasks
+
+Research the "Don't Repeat Yourself" (DRY) principle.
+
+Find a section of code in your test repo with unnecessary repetition.
+From 
+"4. Clean code/calculatePrice.js"
+function finalPriceForStudent(price) {
+  const discount = price * 0.1;
+  return price - discount;
+}
+
+function finalPriceForMember(price) {
+  const discount = price * 0.1;
+  return price - discount;
+}
+
+
+Refactor the code to eliminate duplication.
+Refactored code:
+function applyDiscount(price) {
+  return price - price * 0.1;
+}
+
+function finalPriceForStudent(price) {
+  return applyDiscount(price);
+}
+
+function finalPriceForMember(price) {
+  return applyDiscount(price);
+}
+
+module.exports = { finalPriceForStudent, finalPriceForMember };
+
+
+Write reflections in clean_code.md:
+What were the issues with duplicated code?
+The discount calculation was repeated in multiple functions
+If the discount percentage changed, each function needed updating
+Easy to accidentally update one function and forget the other
+Duplicated code made the file longer and harder to maintain
+
+How did refactoring improve maintainability?
+All discount logic is now in one reusable function
+Only one place to update when rules change
+Fewer lines of code
+Clearer structure and less chance of bugs
+Functions now clearly show intention instead of repeating logic
+
+Commit and push your changes to GitHub.
+🚀 Next Steps
+Move on to Refactoring Code for Simplicity.
+
+
 
 
