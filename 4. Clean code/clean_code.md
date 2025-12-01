@@ -138,4 +138,59 @@ The issue is actually poor variable names
 The function is too long or confusing. Refactor instead
 Code can be made readable with: better naming, smaller functions, removing nested conditions
 
+#53
+
+📌 Refactoring Code for Simplicity
+🎯 Goal
+Learn how to simplify complex or overly engineered code without losing functionality.
+
+✅ Tasks
+
+Research common refactoring techniques.
+Some basic refactoring techniques include:
+Renaming variables/functions to make meaning clear
+Removing unnecessary code
+Simplifying conditionals
+Using guard clauses
+Breaking long code into smaller pieces
+Replacing manual logic with built-in methods
+
+Find an example of overly complicated code in an existing project (or write your own).
+function isEven(num) {
+  if (num % 2 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+
+Refactor it to make it simpler and more readable.
+/**
+ * Checks if a number is even.
+ * @param {number} num
+ * @returns {boolean}
+ */
+function isEven(num) {
+  return num % 2 === 0; // simplified logic
+}
+
+module.exports = isEven;
+
+
+Write reflections in clean_code.md:
+What made the original code complex?
+The original code was more complicated than needed because:
+It used an entire if/else block just to return a boolean
+It repeated the same logic twice
+It made a very simple idea look long and heavy
+
+How did refactoring improve it?
+Refactoring improved the function by:
+Reducing it to one clean expression
+Making the code shorter and easier to understand
+Removing unnecessary branching
+Clarifying intention with a simple one-line return
+
+
 
