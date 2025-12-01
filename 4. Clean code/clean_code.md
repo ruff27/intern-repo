@@ -77,3 +77,65 @@ Makes debugging easier thanks to clear error messages
 Protects other parts of the system from unexpected results
 Encourages writing safe, predictable, and clean code
 
+#52
+
+📌 Commenting & Documentation
+🎯 Goal
+Learn when and how to write helpful comments and documentation.
+
+✅ Tasks
+
+Research best practices for writing comments and documentation.
+
+Find an example of poorly commented code and rewrite the comments to be more useful.
+Poorly commented code:
+// get first
+function g(a) {
+  // check if array exists
+  if (a.length > 0) {
+    // return first
+    return a[0]; // return first item
+  } else {
+    // return null
+    return null; // nothing
+  }
+}
+
+
+Rewritten comments
+/**
+ * Safely returns the first item of an array.
+ * Used when input data might be empty or missing.
+ *
+ * @param {Array} items - The array to read from
+ * @returns {*} The first element, or null if the array is empty
+ */
+function getFirstItem(items) {
+  if (!Array.isArray(items) || items.length === 0) {
+    return null;
+  }
+
+  return items[0];
+}
+
+module.exports = getFirstItem;
+
+
+Write reflections in clean_code.md:
+When should you add comments?
+Add comments when:
+The code involves non-obvious logic
+You want to explain why something is done
+A business rule needs explanation
+It’s a utility function used across the project
+You want to document parameters using JSDoc
+
+When should you avoid comments and instead improve the code?
+Avoid comments when:
+The comment explains something obvious
+(e.g., // return true)
+The issue is actually poor variable names
+The function is too long or confusing. Refactor instead
+Code can be made readable with: better naming, smaller functions, removing nested conditions
+
+
