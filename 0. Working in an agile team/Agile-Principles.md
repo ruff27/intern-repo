@@ -34,8 +34,16 @@ Flexibility which allows to adapt to change when required.
 🛠️ Task
 
 Summarize the main differences between Scrum and Kanban in your own words.
+
 Scrum allows to learn through sprints with a predictable deadline in mind while in Kanban, deliverables are processed continuously on need-based basis.
 Changes in scrum are generally discouraged while in Kanban changes are welcome allowing iterations and continous development.
 
 Identify one Agile principle you think will be most useful in your work.
 Collaboration as this will let team to share ideas between themselves and provide best possible delivery for customers by coming to a conclusion.
+
+During my BanglaGhar real estate project, I naturally followed a Kanban-style workflow. 
+I used a board to manage tasks, picked up new items only after completing the previous one, 
+and frequently made small adjustments based on feedback. This helped reduce bugs and improved 
+feature delivery. I plan to apply the same method at Focus Bear by breaking backend tasks into 
+smaller units and updating progress continuously.
+
