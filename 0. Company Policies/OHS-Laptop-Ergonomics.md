@@ -48,3 +48,10 @@ Portable keyboard and mouse
 Try using posture and movement reminders for a full workday and note any improvements. (Hint: Focus Bear has built-in reminders for movement breaks!)
 
 Document at least one workspace change or habit adjustment you made.
+
+I get reminders from Focus Bear to stand up and stretch.
+When I used the Focus Bear movement reminders during my shift on Tuesday, the first alert came at 10:30 AM. I stood up, stretched my neck and shoulders, and by the end of the day I noticed significantly less stiffness compared to days when I didn’t take breaks.
+
+<img width="1917" height="940" alt="image" src="https://github.com/user-attachments/assets/d267ae5f-9f1e-4e86-9536-a4a2d4be5be4" />
+
+
