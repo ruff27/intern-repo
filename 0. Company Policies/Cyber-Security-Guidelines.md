@@ -44,4 +44,6 @@ Set up your computer and phone to automatically lock (require a password or biom
 Completed.
 
 Document one new cyber security habit you will follow at Focus Bear.
-Do not share user data elsewhere.
+Automatically lock screen when I am away from my PC.
+<img width="1240" height="436" alt="image" src="https://github.com/user-attachments/assets/6fe5b2e8-5a13-4962-84be-4f6360d89d11" />
+
