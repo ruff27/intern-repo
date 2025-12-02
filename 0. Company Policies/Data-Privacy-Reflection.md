@@ -43,7 +43,11 @@ Ignoring security updates that patch vulnerabilities
 🛠️ Task
 
 Identify at least one habit or practice you can adopt to improve data security in your role.
-I've committed using strong passwords and locking up screen when I step away
+I will make it a daily habit to double-check access permissions before sharing any file or document. This ensures that sensitive information is only visible to the correct team members. I’ll also continue using strong, unique passwords and locking my screen whenever I step away from my workstation.
 
 Document at least one key learning or security measure you will implement.
-Use proper backups in case of data loss
+I learned how important it is to store and back up files only in approved, secure environments. Going forward, I will avoid keeping any sensitive data locally and will rely on encrypted company backups to prevent data loss or accidental exposure.
+
+Screenshot of privacy policy
+<img width="1416" height="905" alt="image" src="https://github.com/user-attachments/assets/47094e97-f6a7-44a2-86c0-34d610a09c3f" />
+
