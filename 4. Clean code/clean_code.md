@@ -320,6 +320,60 @@ Allowing each function to be tested individually
 Making the code easier for another developer to understand
 
 
+#55
+
+
+📌 Naming Variables & Functions
+🎯 Goal
+Learn how to choose clear and meaningful names for variables and functions.
+
+✅ Tasks
+
+Research best practices for naming variables and functions.
+
+Find examples of unclear variable names in an existing codebase (or write your own).
+function calc(a, b) {
+  let x = a * 0.15;
+  let y = b - x;
+  return y;
+}
+
+let z = calc(200, 500);
+console.log(z);
+
+
+Refactor the code by renaming variables/functions for better clarity.
+function calculateDiscountedTotal(price, baseAmount) {
+  const discount = price * 0.15;
+  const finalAmount = baseAmount - discount;
+  return finalAmount;
+}
+
+const customerTotal = calculateDiscountedTotal(200, 500);
+console.log(customerTotal);
+
+
+Write reflections in clean_code.md:
+What makes a good variable or function name?
+Clearly describes its purpose.
+Follows consistent naming conventions.
+Uses meaningful terminology related to the domain.
+Is concise but specific.
+Uses verbs for functions and nouns for variables.
+
+What issues can arise from poorly named variables?
+Misunderstanding of the code's intention.
+Increased time spent debugging or onboarding.
+Higher likelihood of bugs due to incorrect assumptions.
+Difficulty extending or maintaining the codebase.
+Frustration among teammates and reviewers.
+
+How did refactoring improve code readability?
+Made the function’s purpose immediately obvious.
+Allowed future developers (including myself) to understand the logic faster.
+Reduced cognitive load since the names explain the values.
+Enabled easier debugging because each step now has a meaningful label.
+
 
 
 
