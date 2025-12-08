@@ -374,6 +374,68 @@ Allowed future developers (including myself) to understand the logic faster.
 Reduced cognitive load since the names explain the values.
 Enabled easier debugging because each step now has a meaningful label.
 
+#56
+
+📌 Understanding Clean Code Principles
+🎯 Goal
+Understand the core principles of clean code and why they matter in real-world development.
+
+✅ Tasks
+
+Research and summarize the following clean code principles in clean_code.md:
+Simplicity – Keep code as simple as possible.
+Write the simplest code that solves the problem. Avoid unnecessary complexity, extra layers, or over-engineering.
+
+Readability – Code should be easy to understand.
+Code should be easy to understand at a glance. Use clear names, simple logic, and a clean structure so anyone can follow it.
+
+Maintainability – Future developers (including you!) should be able to work with the code easily.
+Future developers (including you) should be able to update or fix the code without confusion. Keep functions small, avoid duplication, and separate responsibilities.
+
+Consistency – Follow style guides and project conventions.
+Use the same coding style, naming conventions, formatting, and project rules everywhere. Consistency reduces mental load and makes the codebase predictable.
+
+Efficiency – Write performant, optimized code without premature over-engineering.
+Write code that performs well, but don’t optimize too early. Focus on clarity first, then improve performance only when necessary.
+
+Find an example of messy code online (or write one yourself) and describe why it's difficult to read.
+function x(a,b){
+  let t=a*0.1;
+  if(b>100){
+    t=t+5;
+  }
+  return b-t;
+}
+
+let z=x(20,150);
+console.log(z);
+
+
+In this code, function name x means nothing. Variables a, b, t, z are unclear. No explanation of what the calculation represents. Logic is hidden and confusing
+
+Rewrite the code in a cleaner, more structured way.
+
+function calculateFinalPrice(discountRate, originalPrice) {
+  let discount = originalPrice * discountRate;
+
+  if (originalPrice > 100) {
+    discount += 5; // extra discount
+  }
+
+  return originalPrice - discount;
+}
+
+const finalPrice = calculateFinalPrice(0.1, 150);
+console.log(finalPrice);
+
+This block of code has:
+Clear function name (calculateFinalPrice)
+
+Descriptive variables (discountRate, originalPrice, discount)
+
+Logic is easy to understand
+
+Code follows consistent style and structure
 
 
 
