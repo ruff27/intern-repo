@@ -45,3 +45,41 @@ There are key differences between testing Redux logic and React components:
     - **Redux Tests**: Simple setup; often just importing the reducer and passing a state object.
     - **Component Tests**: Complex setup; often requires wrapping components in `<Provider store={store}>` and mocking context.
 
+
+#73
+
+📌 Mocking API Calls in Jest
+🎯 Goal
+Learn how to mock API calls in Jest to test asynchronous code.
+
+✅ Why is this important?
+Focus Bear interacts with APIs for authentication, analytics, and more. Mocking API calls in tests ensures that components behave correctly without making real network requests.
+
+✅ Tasks
+
+Research how to mock API calls in Jest using jest.fn() and jest.mock().
+
+Create a React component that fetches and displays data from an API.
+
+Write a Jest test that mocks the API call and verifies the component’s behavior.
+
+Run the test and check that it passes.
+
+Push your test to GitHub.
+
+<img width="303" height="98" alt="image" src="https://github.com/user-attachments/assets/301a196b-16de-40ea-aea0-0d7e8447d3b3" />
+
+<img width="940" height="648" alt="image" src="https://github.com/user-attachments/assets/23eca32c-b3ed-42f4-a9f2-967d977e630e" />
+
+
+Reflection (in unit_tests.md):
+## Why is it important to mock API calls?
+1.  **Speed**: Real network requests are slow. Mocking makes tests run instantly.
+2.  **Reliability**: Real APIs can be down, have rate limits, or return data that changes. Mocking ensures consistent test data every time.
+3.  **Cost**: Avoids unnecessary usage of paid APIs.
+4.  **Safety**: Prevents tests from accidentally modifying real data (e.g., executing a DELETE request).
+
+## Common Pitfalls in Async Testing
+1.  **Not waiting for updates**: Asserting on the DOM before the async state update has happened (fix: use `waitFor` or `findBy` queries).
+2.  **Unresolved Promises**: Forgetting to `await` the mock resolution or the test assertions, leading to false positives (test passes before assertion runs).
+3.  **Mock Leaking**: Not clearing mocks between tests (`jest.clearAllMocks()`), causing tests to interfere with each other.
