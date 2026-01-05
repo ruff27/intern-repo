@@ -165,3 +165,68 @@ What are the benefits of using React Testing Library instead of testing implemen
 -   **Event Handling**: Simulating complex events (like drag-and-drop or typing) can sometimes require `user-event` library for more realistic behavior than `fireEvent`.
 
 
+#27
+
+📌 Introduction to Testing in NestJS
+🎯 Goal
+Understand the different types of testing in NestJS and how they ensure application stability.
+
+✅ Why is this important?
+Testing is critical in Focus Bear’s backend to ensure reliability and prevent regressions. NestJS supports unit, integration, and end-to-end (E2E) testing using Jest and Supertest.
+
+✅ Tasks
+
+Research the different types of testing in NestJS (Unit, Integration, E2E)
+
+Understand the role of Jest in NestJS testing
+
+Explore how to test NestJS modules using @nestjs/testing
+
+Run a sample test using Jest
+
+<img width="879" height="890" alt="image" src="https://github.com/user-attachments/assets/a7336e66-3e5a-42d6-8676-4d519971acb6" />
+<img width="835" height="1028" alt="image" src="https://github.com/user-attachments/assets/e05070a1-4373-4f4e-aaeb-45bb65b4c08b" />
+<img width="381" height="340" alt="image" src="https://github.com/user-attachments/assets/b42dcde1-1c8a-4f9c-a894-1e6e21177490" />
+
+
+## Reflection
+
+### What are the key differences between unit, integration, and E2E tests?
+
+1.  **Unit Tests**:
+    *   **Scope**: Test a single class (e.g., a Service or Controller) in isolation.
+    *   **Dependencies**: All dependencies are mocked (e.g., repository, other services).
+    *   **Speed**: Extremely fast.
+    *   **Goal**: Ensure the business logic of a specific function works correctly.
+
+2.  **Integration Tests**:
+    *   **Scope**: Test how multiple parts of the application work together (e.g., Controller + Service).
+    *   **Dependencies**: May use real dependencies or a mix of real and mocked ones. Often involves a real database connection (e.g., using an in-memory DB like SQLite or Docker).
+    *   **Speed**: Slower than unit tests but faster than E2E.
+    *   **Goal**: Verify that modules interact correctly.
+
+3.  **End-to-End (E2E) Tests**:
+    *   **Scope**: Test the entire application from the user's perspective (HTTP request to response).
+    *   **Dependencies**: Uses the full application stack, including the real database, authentication, etc.
+    *   **Speed**: Slowest.
+    *   **Goal**: Ensure the system works as expected in a production-like environment.
+
+### Why is testing important for a NestJS backend?
+*   **Reliability**: Ensures APIs return correct data and handle errors gracefully.
+*   **Regression Prevention**: Prevents new changes from breaking existing features.
+*   **Documentation**: Tests document how the API is supposed to behave.
+*   **Refactoring**: Allows safe refactoring of internal logic without changing external behavior.
+
+### How does NestJS use `@nestjs/testing` to simplify testing?
+The `@nestjs/testing` package provides a `Test` class that mocks the full NestJS runtime. It allows you to:
+*   **Create Testing Modules**: Similar to `AppModule`, but you can selectively load providers.
+*   **Mock Dependencies**: Easily swap out real providers with mock implementations using `.overrideProvider().useValue()`.
+*   **Dependency Injection**: Automatically handles dependency injection for the classes being tested.
+
+### What are the challenges of writing tests for a NestJS application?
+*   **Dependency Management**: mocking deeply nested dependencies can be complex.
+*   **Database State**: For integration/E2E tests, ensuring the database is in a clean state before each test is critical and can be tricky.
+*   **Async Operations**: Handling promises and observables correctly.
+
+
+
