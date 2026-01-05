@@ -83,3 +83,43 @@ Reflection (in unit_tests.md):
 1.  **Not waiting for updates**: Asserting on the DOM before the async state update has happened (fix: use `waitFor` or `findBy` queries).
 2.  **Unresolved Promises**: Forgetting to `await` the mock resolution or the test assertions, leading to false positives (test passes before assertion runs).
 3.  **Mock Leaking**: Not clearing mocks between tests (`jest.clearAllMocks()`), causing tests to interfere with each other.
+
+#57
+
+📌 Introduction to Unit Testing with Jest
+🎯 Goal
+Learn the basics of unit testing in React using Jest.
+
+✅ Why is this important?
+Focus Bear relies on automated testing to ensure the stability of features across updates. Writing unit tests prevents regressions and improves code reliability.
+
+✅ Tasks
+
+Research what Jest is and why unit tests are important.
+
+Set up Jest in your React project (if not already included).
+
+Write a simple test for a utility function (e.g., a function that adds two numbers).
+
+Run the test and check that it passes.
+
+Push your test to GitHub.
+
+<img width="629" height="244" alt="image" src="https://github.com/user-attachments/assets/d7072f89-b789-4c45-a6fb-faeea97725b8" />
+<img width="709" height="384" alt="image" src="https://github.com/user-attachments/assets/e62a2d11-0a05-486a-90ee-88c94bd0f7ed" />
+<img width="644" height="128" alt="image" src="https://github.com/user-attachments/assets/fa420d9f-bf68-4740-8230-45142c64e7fa" />
+
+
+# Reflection: Introduction to Unit Testing with Jest
+
+## Why is automated testing important in software development?
+Automated testing is crucial for maintaining code quality and ensuring stability as the application grows. It allows developers to:
+-   **Catch bugs early**: Identify issues before they reach production.
+-   **Refactor with confidence**: Change code knowing that existing functionality is protected by tests.
+-   **Document code**: Tests serve as live documentation of how the code is expected to behave.
+-   **Save time**: Automated tests run much faster than manual regression testing.
+
+## What did you find challenging when writing your first Jest test?
+-   **Setting up the environment**: Ensuring Jest and its dependencies are correctly installed and configured in `package.json`.
+-   **Understanding assertions**: Learning the different matchers (like `toBe`, `toEqual`) and when to use them.
+-   **File structure**: Deciding where to place test files (co-located vs. `__tests__` folder).
