@@ -123,3 +123,45 @@ Automated testing is crucial for maintaining code quality and ensuring stability
 -   **Setting up the environment**: Ensuring Jest and its dependencies are correctly installed and configured in `package.json`.
 -   **Understanding assertions**: Learning the different matchers (like `toBe`, `toEqual`) and when to use them.
 -   **File structure**: Deciding where to place test files (co-located vs. `__tests__` folder).
+
+
+#69
+
+📌 Testing React Components with Jest & React Testing Library
+🎯 Goal
+Learn how to write unit tests for React components using Jest and React Testing Library.
+
+✅ Why is this important?
+Focus Bear has many interactive UI elements, and testing them ensures that components render correctly and behave as expected.
+
+✅ Tasks
+
+Research how React Testing Library works with Jest.
+
+Create a simple React component that displays a message.
+
+Write a test that checks if the component renders correctly.
+
+Write a test that simulates user interaction (e.g., clicking a button).
+
+Run the tests and check that they pass.
+
+Push your test to GitHub.
+
+<img width="940" height="586" alt="image" src="https://github.com/user-attachments/assets/d3a677a8-24c2-4e45-95c4-d826ef72c1e5" />
+<img width="940" height="601" alt="image" src="https://github.com/user-attachments/assets/7e1b26f7-746d-4970-b7b1-ad04512b3a74" />
+<img width="316" height="384" alt="image" src="https://github.com/user-attachments/assets/8d40bb15-5ef0-4e7b-863e-27eb8cd38db7" />
+
+
+Reflection (in unit_tests.md):
+What are the benefits of using React Testing Library instead of testing implementation details?
+## Benefits of React Testing Library (RTL)
+-   **User-Centric**: RTL encourages testing how the user interacts with the app (e.g., clicking buttons, reading text) rather than implementation details (e.g., checking internal state).
+-   **Refactoring Safety**: Since tests rely on what the user sees, you can change the underlying implementation (like switching from `useState` to `useReducer`) without breaking the tests.
+-   **Accessibility**: RTL's queries (like `getByRole`, `getByLabelText`) promote writing accessible code.
+
+## Challenges with User Interaction
+-   **Async Updates**: Sometimes user interactions trigger async updates (like API calls). Remembering to use `waitFor` or `findBy` is crucial.
+-   **Event Handling**: Simulating complex events (like drag-and-drop or typing) can sometimes require `user-event` library for more realistic behavior than `fireEvent`.
+
+
